@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>HTML APP</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="nav-elements"><img src="/assets/imgs/icons/baseline-shopping_cart-24px.svg" alt=""></li>
+            <li class="nav-elements"><img src="/assets/imgs/icons/baseline-shopping_cart-24px.svg" alt=""></li>
+            <li class="nav-elements"><img src="/assets/imgs/icons/baseline-shopping_cart-24px.svg" alt=""></li>
+        </ul>
+    </nav>
+
+
+
+    <div id="banner"></div>
+
+    <div id="game">
+        <div class="game">
+            <img src="assets/imgs/watch_dogs_ps4.jpg" alt="Watch Dogs"></img>
+            <p>Watch Dogs - PS4</p>
+            <p>R$ 140,00</p>
+            <button class="buy" type="button">Comprar</button>
+            <i class="material-icons">add_shopping_cart</i>
+        </div>
+
+        <div class="game">
+            <img src="assets/imgs/watch_dogs_ps4.jpg" alt="Watch Dogs"></img>
+            <p>Watch Dogs - PS4</p>
+            <p>R$ 140,00</p>
+            <button class="buy" type="button">Comprar</button>
+        </div>
+        <div class="game">
+            <img src="assets/imgs/watch_dogs_ps4.jpg" alt="Watch Dogs"></img>
+            <p>Watch Dogs - PS4</p>
+            <p>R$ 140,00</p>
+            <button class="buy" type="button">Comprar</button>
+        </div>
+        <div class="game">
+            <img src="assets/imgs/watch_dogs_ps4.jpg" alt="Watch Dogs"></img>
+            <p>Watch Dogs - PS4</p>
+            <p>R$ 140,00</p>
+            <button class="buy" type="button">Comprar</button>
+        </div>
+        <div class="game">
+            <img src="assets/imgs/watch_dogs_ps4.jpg" alt="Watch Dogs"></img>
+            <p>Watch Dogs - PS4</p>
+            <p>R$ 140,00</p>
+            <button class="buy" type="button">Comprar</button>
+        </div>
+        <div class="game">
+            <img src="assets/imgs/watch_dogs_ps4.jpg" alt="Watch Dogs"></img>
+            <p>Watch Dogs - PS4</p>
+            <p>R$ 140,00</p>
+            <button class="buy" type="button">Comprar</button>
+        </div>
+        <div class="game">
+            <img src="assets/imgs/watch_dogs_ps4.jpg" alt="Watch Dogs"></img>
+            <p>Watch Dogs - PS4</p>
+            <p>R$ 140,00</p>
+            <button class="buy" type="button">Comprar</button>
+        </div>
+        <div class="game">
+            <img src="assets/imgs/watch_dogs_ps4.jpg" alt="Watch Dogs"></img>
+            <p>Watch Dogs - PS4</p>
+            <p>R$ 140,00</p>
+            <button class="buy" type="button">Comprar</button>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    let imageArray = document.getElementsByClassName("game");
+    for (let i = 0; i < imageArray.length; i++) {
+        imageArray[i].addEventListener('click', function () {
+            console.log(this);
+        });
+
+    }
+
+</script>
+
+</html>
