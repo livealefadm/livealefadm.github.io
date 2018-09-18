@@ -1,13 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Github Pages First Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Alef Souza</title>
 </head>
 <body>
-
-	<div>
-		<h1>Hello From Github Pages</h1>
-	</div>
-
+    <!--Structure of the page-->
+    <div class="banner">
+        <div class="container">
+            <div class="item item1"><img src="assets/alef_img.jpg" alt="Alef"></div>
+            <div class="item item2">Alef Moab de Souza</div>
+            <div class="item item3 ">Graduando em Ciência da Computação</div>
+            <div class="item item4">Universidade de Vila Velha</div>
+            <div class="item item5">Vila Velha - ES</div>
+            <div class="item item6">
+                <a href="http://www.linkedin.com/in/alef-souza/">
+                    <img src="/assets/Logo-2C-21px-R.png" alt="Alef's Picture">
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="span"></div>
+    
+    <div class="main">
+        <div class="project">Projetos</div>
+        <div class="project1"> <a href="/app.html">Game Store</a></div>
+        <div class="project2">Introdução a Computação com C</div>
+        <div class="project3"></div>
+    </div>
+    <div class="span"></div>
+    <div id="map"></div>
+    <div class="span"></div>
+    <footer>
+        
+    </footer>
+    <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of vilaVelhaU
+              var vilaVelhaU = {lat:-20.354261, lng:-40.299273};
+              // The map, centered at vilaVelhaU
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 15, center: vilaVelhaU});
+              // The marker, positioned at vilaVelhaU
+              var marker = new google.maps.Marker({position: vilaVelhaU, map: map});
+            }
+    </script>
+            
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUi_1EuKP_Hlvb--LcVWEhGXT6ka7_FI8&callback=initMap"></script>
 </body>
 </html>
