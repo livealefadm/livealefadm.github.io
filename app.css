@@ -17,8 +17,9 @@ h1{
 #banner{
     height:300px;
     width:100%;
-    background-image: url("assets/imgs/watchthedog.jpg" );;
-    border-image-width: auto;
+    background-image: url("assets/imgs/watchthedog.jpg" );
+    background-size: cover ;
+    background-repeat: no-repeat;
 }
 
 #game{
@@ -39,6 +40,8 @@ body{
 }
 
 .game{
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-flow: column;
     background: white;
     padding: 10%;
 }

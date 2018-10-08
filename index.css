@@ -7,8 +7,10 @@ body{
 }
 
 .banner{
-    background-color: tomato;
     padding: 10% 5% 0 2%;
+    background-image: url(assets/imgs/rawpixel-559744-unsplash.jpg);
+    background-repeat:no-repeat initial;
+    background-size: cover;   
 }
 
 .container{
@@ -25,7 +27,9 @@ body{
 
 .item1{
     grid-row: 1/end;
-    /*background-image: url(/assets/alef_img.jpg)*/
+    background-image: url(/assets/alef_img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .item2{
