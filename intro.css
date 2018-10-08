@@ -42,3 +42,11 @@ pre{
 h2{
     color: rgb(24, 170, 170);
 }
+
+.printf{
+    color: red;
+}
+
+.string{
+    color: lightgreen;
+}
