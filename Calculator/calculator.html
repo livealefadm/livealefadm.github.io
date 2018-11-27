@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="calculator.css">  
-</head>
-<body>
-    <h1>Calculadora de Juros Compostos - by Alef Souza</h1>
-    <div class="main">
-        <div id="show">
-            <h2 class="showValue">Valor Futuro</h2>
-            <h3 class="showValue"></h3>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="calculator.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1>Calculadora de Juros Compostos</h1>
+        </header>
+        <div class="result">
+            <h2 id="returnValue">R$ <span id="value">0.00</span></h2>
         </div>
-        <div class="calc">
-            <input type="number" name="balance" id="valorInicial">
-            <input type="number" name="balance" id="taxaDeJuros">
-            <input type="number" name="balance" id="qMeses">
+        <div class="input">
+            <label for="balance">Montante Inicial:</label>
+                <input type="text" name="balance"/>
+            <label for="juros">Taxa de Juros em %:</label>
+                <input type="text" name="taxaDeJuros"/>
+            <label for="tempo-de-investimento"> Tempo de investimento em Meses:</label>
+                <input type="text" name="tempo-de-investimento"/>
         </div>
-    </div>
-</body>
-<script src="calculator.js"></script>
+    </body>
+    <script type="text/javascript" src="calculator.js"></script>
 </html>
