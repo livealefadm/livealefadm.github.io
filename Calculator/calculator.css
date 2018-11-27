@@ -1,0 +1,29 @@
+.main{
+    text-align: center;
+}
+
+#show{
+    text-align: center;
+    height: 200px;
+    width:800px;
+    background: rgb(252, 247, 201); 
+    
+}
+.showValue{
+    display: block;
+    padding: 10px;
+}
+
+.calc{
+    margin: auto;
+    float: left;
+    height: 100px;
+    width: 500px;
+}
+
+/* Apenas Chrome aceita essa implementação */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none !important; 
+  margin: 0 !important; 
+}
