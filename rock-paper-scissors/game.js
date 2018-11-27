@@ -23,23 +23,21 @@ const convertChoice = choice => {
     if (choice === "s") return "Tesousa";
 }
 
-const mensagem = (userChoice,computerChoice) =>{
-
-}
-
-const userWins = (userChoice, computerChoice) => {
+const userWins = (userChoice, compChoice) => {
     userScore++;
     userScore_span.innerHTML = userScore;
-    mensagem(userChoice);
+    const message = `Player(${convertChoice(userChoice)}) Vence Computador(${convertChoice(compChoice)})`;
+    result_p.innerHTML = message;
 }
-const computerWins = (userChoice, computerChoice) => {
+const computerWins = (userChoice, compChoice) => {
     computerScore++;
     computerScore_span.innerHTML = computerScore;
-    mensagem(userChoice);
+    const message = `Player(${convertChoice(userChoice)}) Perde para Computador(${convertChoice(compChoice)})`;
+    result_p.innerHTML = message;
 }
 
 const draw = (userChoice, compChoice) =>{
-    const message = `Empate: Usuário(${convertChoice(userChoice)}) - Computador(${convertChoice(compChoice)})`;
+    const message = `Empate: Player(${convertChoice(userChoice)}) - Computador(${convertChoice(compChoice)})`;
     result_p.innerHTML = message;
 }
 const game = (userChoice) => {
